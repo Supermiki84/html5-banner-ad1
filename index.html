@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Krojaceva skola baner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="https://krojacevaskola.com" target="_blank" id="frontend-baner-link">
+  <h1 class="logo"><img src="img/krojaceva-skola-logo.svg" alt="Krojaceva skola logo"></h1>
+  <h1 class="text-1">Ako volis toplinu doma</h1>
+  <h2 class="text-2"><span>Uci online i postani</span><br> frontend developer</h2>
+<div class="window">
+  <img class="window-frame" src="img/prozor.svg" alt="Prozor">
+  <img class="snow" src="img/pahulje.svg" alt="Pahulje">
+</div>
+<img class="enviorment" src="img/ambijent.svg" alt="Ambijent">
+<img class="light" src="img/svetlo.svg" alt="Svetlo">
+<div class="notes">
+  <img class="nota1" src="img/nota1.svg" alt="Nota 1">
+  <img class="nota2" src="img/nota2.svg" alt="Nota 2">
+  <img class="nota3" src="img/nota3.svg" alt="Nota 3">
+  <img class="nota4" src="img/nota4.svg" alt="Nota 4">
+  <img class="nota5" src="img/nota5.svg" alt="Nota 5">
+</div>
+
+</a>
+
+
+
+<script>
+  var bannerHolder;
+  var newOne;
+  setInterval(function () {
+    bannerHolder = document.getElementById('frontend-baner-link');
+    newOne = bannerHolder.cloneNode(true);
+    bannerHolder.parentNode.replaceChild(newOne, bannerHolder);
+  },9000);
+</script>
+
+</body>
+</html>
